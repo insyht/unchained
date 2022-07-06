@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Dotenv\Dotenv;
 use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends \Illuminate\Foundation\Support\Providers\RouteServiceProvider
@@ -13,7 +14,7 @@ class RouteServiceProvider extends \Illuminate\Foundation\Support\Providers\Rout
      *
      * @var string
      */
-    protected $namespace = 'App\Unchained\Http\Controllers';
+    protected $namespace = '';
     protected $basePath = __DIR__ . '/../../';
 
 
@@ -25,6 +26,7 @@ class RouteServiceProvider extends \Illuminate\Foundation\Support\Providers\Rout
     public function boot()
     {
         parent::boot();
+        $this->namespace = sprintf('App\%s\Http\Controllers', env('ROOT_NAMESPACE', 'unchained'));
     }
 
 
