@@ -16,7 +16,7 @@ spl_autoload_register(
             $path = explode('\\', $className);
             $path = array_slice($path, 2);
             $path = implode('/', $path) . '.php';
-            require_once __DIR__ . '/../../app/' . $path;
+            require_once __DIR__ . '/../../../app/' . $path;
         }
         switch ($className) {
             case 'App\Providers\RouteServiceProvider':
