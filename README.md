@@ -3,8 +3,8 @@ Separate Laravel code from your own, to make updates a breeze.
 
 ## How to use
 - Create a `laravel` directory in your project's root directory and place a fresh Laravel installation in it
-- Load this package in your project using `composer require insyht/unchained:~version` where `version` is the main 
-  version of Laravel you plan to use (for example: 10)
+- Load this package in your project using `composer require insyht/unchained:^version` where `version` is the main 
+  version of Laravel you plan to use (for example: 9)
 - Define your root namespace in the `.env` file in your project's root directory
 - Create an index.php file in either your `public` or `public_html` directory with the following lines:
 ```php
