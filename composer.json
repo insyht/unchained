@@ -1,0 +1,17 @@
+{
+    "name": "insyht/unchained",
+    "type": "library",
+    "description": "Unchained is a way to separate your code from the Laravel codebase to make updates a breeze.",
+    "keywords": [
+        "unchained"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jordy Thijs"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    }
+}
